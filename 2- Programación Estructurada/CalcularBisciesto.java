@@ -3,12 +3,7 @@ import java.util.Scanner;
 public class CalcularBisciesto {
     
     private int anio;
-    private Scanner scanner;
-
-    public CalcularBisciesto(){
-        this.anio = 0;
-        this.scanner = new Scanner(System.in);
-    }
+    private Scanner scanner = new Scanner(System.in);
 
     public void solicitarAnio() {
         System.out.print("Ingrese un año: ");
