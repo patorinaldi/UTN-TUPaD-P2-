@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class SumaPares {
+    
+    private int sumaPares = 0; 
+    private int numero = 1;
+    Scanner scanner = new Scanner(System.in);
+
+    public void leerNumeros() {
+
+        while (numero != 0) {
+            if (numero % 2 == 0) {
+                sumaPares += numero;
+            }
+            System.out.print("Ingrese un número (0 para terminar): ");
+            numero = Integer.parseInt(scanner.nextLine());
+        }
+    }
+
+    public void imprimirResultado() {
+        System.out.println("La suma de los números pares es: " + sumaPares);
+    }
+
+    public static void main(String[] args) {
+        SumaPares sumaPares = new SumaPares();
+        sumaPares.leerNumeros();
+        sumaPares.imprimirResultado();
+    }
+
+}
