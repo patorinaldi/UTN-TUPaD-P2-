@@ -8,11 +8,11 @@ public class SumaPares {
 
     public void leerNumeros() {
         do {
+            System.out.print("Ingrese un número (0 para terminar): ");
+            numero = Integer.parseInt(scanner.nextLine());
             if (numero % 2 == 0) {
                 sumaPares += numero;
             }
-            System.out.print("Ingrese un número (0 para terminar): ");
-            numero = Integer.parseInt(scanner.nextLine());
         } while (numero != 0);
     }
 
