@@ -3,17 +3,18 @@ import java.util.Scanner;
 public class SumaPares {
     
     private int sumaPares = 0; 
-    private int numero;
+    private int numero = 1;
     Scanner scanner = new Scanner(System.in);
 
     public void leerNumeros() {
-        do {
-            System.out.print("Ingrese un número (0 para terminar): ");
-            numero = Integer.parseInt(scanner.nextLine());
+
+        while (numero != 0) {
             if (numero % 2 == 0) {
                 sumaPares += numero;
             }
-        } while (numero != 0);
+            System.out.print("Ingrese un número (0 para terminar): ");
+            numero = Integer.parseInt(scanner.nextLine());
+        }
     }
 
     public void imprimirResultado() {
