@@ -1,0 +1,5 @@
+Este es un archivo de ejemplo
+Línea 2: Probando lectura de archivos
+Línea 3: Try-with-resources en Java
+Línea 4: Manejo de excepciones
+Línea 5: Fin del archivo
